@@ -1,0 +1,112 @@
+{% extends 'bio_base.html'%}
+{% load static %}
+
+{% block title %}
+    Rohit C. Gore - Python Developer
+{% endblock %} 
+
+{% block content %}
+<section class="background">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="/">Rohit Chandrakant Gore</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                    aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse pull-left">
+                <ul class="navbar-nav ml-auto ">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="/projects/">
+                            Blogs
+                        </a>
+                    </li>
+                    
+                    <li class="nav-item ">
+                        <a class="nav-link" href="/offer-project/">
+                            Projects
+                        </a>
+                    </li>
+                    
+                    <li class="nav-item ">
+                        <a class="nav-link" href="/external-audit/">
+                            Request CV
+                        </a>
+                    </li>
+                    
+                    <li class="nav-item ">
+                        <a class="nav-link" href="/freeturn/">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+ 
+<div class="container" >
+    <div class="row vertical-align">
+        <div class="col-md-4">
+            <img class="img-fluid" height="512" id="main-avatar" src="{% static 'images/rohit_gore.jpg' %}" width="512">
+        </div>
+        <div class="col-md-8">
+            <h1>
+                Rohit Chandrakant Gore
+            </h1>
+            <h2>Python Developer</h2>
+            <h5><p>Web Developer |Web Scraper |Machine Learning Engineer </p></h5>
+
+            <div class="row row-cols-1 row-cols-md-4 g-4">
+                <div class="col">
+                    <a href="hackerrank.com/rohitcgore">
+                        <img height="50" width="50" src="{% static 'images/hackerrank.png' %}" class="mx-auto d-block">
+                    </a>
+                    <div class="text-center">
+                        hackerrank
+                    </div>
+                </div>
+                
+                
+                <div class="col">
+                    <a href="https://github.com/rohitchandrakantgore" >
+                        <img height="50" width="50" src="{% static 'images/github-512.png' %}"  class="mx-auto d-block">
+                    </a>
+                    <div class="text-center">
+                        GitHub
+                    </div>
+                </div>
+                
+                
+                <div class="col">
+                    <a href="https://www.linkedin.com/in/rohitchandrakantgore/">
+                        <img height="50" width="50" src="{% static 'images/linkedin-icon.png' %}"  class="mx-auto d-block">
+                    </a>
+                    <div class="text-center">
+                        LinkedIn
+                    </div>
+                </div>
+
+                <div class="col">
+                    <a href="https://www.kaggle.com/rcgore" >
+                        <img height="50" width="50" src="{% static 'images/kaggle.png' %}"  class="mx-auto d-block">
+                    </a>
+                    <div class="text-center">
+                        kaggle
+                    </div>  
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="col-lg-6">
+
+</div>
+
+        </div>
+    </div>
+</section>
+
+{%endblock%}
